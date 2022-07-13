@@ -1,74 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0%;
     padding: 0%;
-    justify-content: space-between;
-    
-    }
+    justify-content: flex-end;
 
-.ul li a{
-text-decoration: none;
-    }
-.div img{
+}
+
+div img {
     display: block;
     width: 100%;
 }
 
- 
- .flex-container{
+
+.flex-container {
     display: flex;
     max-width: 992px;
     margin: auto;
     width: 100%;
     min-width: 320px;
-   }
-
-header{
-        background-color: rgb(99, 173, 223);
-        height: 100px;
-        display: flex;
-        align-items: center;
-        color: white;       
 }
-    
-header.list-items{
+
+header {
+    background-color: rgb(99, 173, 223);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header.list-items {
     display: flex;
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 .list-items li a {
-        color: white;
-    }
-header .menu{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+header .menu {
     justify-content: space-between;
-    }
-.apresentacao{
+}
+
+.apresentacao {
     height: 100vh;
     align-items: center;
     justify-content: space-between;
 }
-.apresentacao .texto-apresentacao{
+
+.apresentacao .texto-apresentacao {
     min-height: 200px;
     width: 100%;
-    
+
 }
 
-.texto-apresentacao h1{
-    color:rgb(99, 173, 223);
+.texto-apresentacao h1 {
+    color: rgb(99, 173, 223);
     font-size: 48px;
     margin-bottom: 10px;
 }
 
- .btn{
+.btn {
     background-color: rgb(99, 173, 223);
     color: white;
     text-align: center;
@@ -82,67 +86,68 @@ header .menu{
     margin-bottom: 10px;
 
 }
-#quem-somos  {
+
+#quem-somos {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 }
 
-#quem-somos h2{
+#quem-somos h2 {
     font-size: 32px;
     color: rgb(99, 173, 223);
     display: flex;
     margin-bottom: 20px;
 }
 
-#quem-somos h2::before{
+#quem-somos h2::before {
     content: "";
     height: 50x;
     width: 5px;
     margin-right: 5px;
     background-color: rgb(99, 173, 223);
     position: relative;
- }
-
- #quem-somos p{
-    margin-bottom: 10px;
-    width: 90%;
- }
-
- #quem-somos img{
-    min-width: 420px;
-
- }
-
- .container-externo{
-    background-color:rgb(99, 173, 223);
-    width: 100%;
- }
-
- .servicos{
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 
-.servicos h2{
+#quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img {
+    min-width: 420px;
+
+}
+
+.container-externo {
+    background-color: rgb(99, 173, 223);
+    width: 100%;
+}
+
+#servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px 0;
+}
+
+#servicos h2 {
     color: white;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
- .list-servicos{
+.list-servicos {
     display: flex;
     justify-content: space-between;
-     
- }
 
- .list-servicos .item-servico{
-    text-align: center;
-    
 }
 
-.item-servico a{
+.list-servicos .item-servico {
+    text-align: center;
+
+}
+
+.item-servico a {
     width: 220px;
     background-color: white;
     border-radius: 30px;
@@ -151,50 +156,55 @@ header .menu{
     margin-top: 20px;
     line-height: 50px;
     padding: 5px 10px;
-    color:rgb(99, 173, 223);
+    color: rgb(99, 173, 223);
     font-size: 14px;
     text-decoration: none;
     font-weight: 700;
 
 
 }
-.item-servico p{
-    font-weight:  700;
+
+.item-servico p {
+    font-weight: 700;
     font-size: 18px;
     color: white;
     margin-top: 20px;
 }
-.item-servico img{
+
+.item-servico img {
     width: 80%;
     margin: auto;
 }
-#planos{
+
+#planos {
     flex-direction: column;
     min-height: 100vh;
     padding: 50px;
 }
-#planos h2{
+
+#planos h2 {
     font-size: 32px;
 }
 
-.list-planos{
+.list-planos {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.item-plano{
+.item-plano {
     flex: 1;
     border: 5px solid rgb(99, 173, 223);
     margin-right: 20px;
     padding: 10px;
     width: 240px;
-    
+
 }
-.item-plano.btn{
+
+.item-plano .btn {
     margin: auto;
     margin-bottom: 20px;
-   
+
 }
 
 .item-plano h3 {
@@ -205,22 +215,24 @@ header .menu{
     margin: 20px;
 
 }
-.item-plano h3::after{
+
+.item-plano h3::after {
     content: "";
-    background-color:rgb(99, 173, 223);
+    background-color: rgb(99, 173, 223);
     width: 100%;
     height: 3px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .item-plano ul {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.item-plano ul li{
+.item-plano ul li {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -228,64 +240,73 @@ header .menu{
 
 }
 
-.item-plano ul li::before{
+.item-plano ul li::before {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: rgb(99,173,223);
+    background-color: rgb(99, 173, 223);
     margin-right: 5px;
- }
+}
 
- footer{
-    background-color: rgb(99,173,223);
+footer {
+    background-color: rgb(99, 173, 223);
     height: 70px;
     display: flex;
     align-items: center;
-    
- }
+}
 
- footer .footer{
+footer .footer {
     justify-content: space-between;
     color: white;
- }
+}
+
+
+
 /*
  mobile*/
- @media(max-width: 992px){
-    .flex-container{
+@media(max-width: 992px) {
+    .flex-container {
         flex-direction: column;
     }
 
-    .apresentacao{
+    .apresentacao {
         flex-direction: column-reverse;
     }
-    .apresentacao .texto-apresentacao{
+
+    .apresentacao .texto-apresentacao {
         width: 100%;
     }
-    #quem-somos{
+
+    #quem-somos {
         flex-direction: column-reverse;
     }
-    #quem-somos img{
+
+    #quem-somos img {
         min-width: 320px;
         margin: auto;
     }
-    .list-servicos{
+
+    .list-servicos {
         flex-direction: column;
     }
-    .item-servico img{
+
+    .item-servico img {
         width: 50%;
         margin: auto;
     }
-    .list-planos{
+
+    .list-planos {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 20px;
 
     }
-    .list-items .item-plano{
+
+    .list-items .item-plano {
         max-width: 90%;
         margin: auto;
         width: 100%;
         margin-bottom: 20px;
     }
 
- }
+}
